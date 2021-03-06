@@ -1,0 +1,18 @@
+# Assignment 5
+# Program 4
+def SumDigit(no):
+	sum = 0
+	while no != 0:
+		sum = sum + int(no % 10)
+		no = int(no / 10)
+		
+		SumDigit(no)
+	return sum
+	
+def main():
+	print("Enter the number:")
+	value = int(input())
+	ret = SumDigit(value)
+	print("The Summation of digit of number is:",ret)
+if __name__ == "__main__":
+	main()
