@@ -1,0 +1,16 @@
+# Assignment 5
+# Program 3
+def PatternPtr(no):
+	
+	if no != 0:
+		no = no - 1
+		print(no,end=" " )
+		PatternPtr(no)
+	
+def main():
+	print("Enter the number:")
+	value = int(input())
+	PatternPtr(value)
+	
+if __name__=="__main__":
+	main()
